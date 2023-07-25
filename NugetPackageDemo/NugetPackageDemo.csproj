@@ -4,7 +4,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <Version Condition="'$(BUILD_VERSION)' == ''">1.0.7</Version>
+    <Version Condition="'$(BUILD_VERSION)' == ''">1.0.Minor_Version</Version>
     <Version Condition="'$(BUILD_VERSION)' != ''">$(BUILD_VERSION)</Version>
   </PropertyGroup>
 
