@@ -33,6 +33,9 @@ jobs:
     
     - name: 'Pack project'
       run: dotnet pack ${{ env.PROJECT_PATH }} --no-restore --no-build --configuration Release --include-symbols --output ${{ env.PACKAGE_OUTPUT_DIRECTORY }}
+    
+    - name: 'Print Secret'
+      run: echo 'Hello' ${{ secrets.KALYAN_NUGET_SECRET }}
 
     - name: 'Push package'
       run: dotnet nuget push ${{ env.PACKAGE_OUTPUT_DIRECTORY }}/*.nupkg -k ${{ secrets.KALYAN_NUGET_SECRET }} -s ${{ env.NUGET_SOURCE_URL }}
