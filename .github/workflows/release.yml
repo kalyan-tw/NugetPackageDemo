@@ -24,7 +24,7 @@ jobs:
       run: ls -la && pwd
 
     - name: 'Add minor version'
-      run: sed -i “s/Minor_Version/${{ github.run_number }}/g" NugetPackageDemo/NugetPackageDemo.csproj
+      run: sed -i "s/Minor_Version/${{ github.run_number }}/g" ./NugetPackageDemo/NugetPackageDemo.csproj
 
     - name: 'Install dotnet'
       uses: actions/setup-dotnet@v1
