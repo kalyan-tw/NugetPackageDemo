@@ -7,6 +7,6 @@ public class TestClass
 
     public void TestMethod()
     {
-        Console.WriteLine("Test");
+        Console.WriteLine("Test Output");
     }
 }
